@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
 
-    <arg name="map_file" default="$(find kbot_navigation)/maps/map.yaml"/>
+    <arg name="map_file" default="$(find kbot_slam)/maps/map.yaml"/>
     <arg name="move_forward_only" default="false"/>
     
     <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)"/>
